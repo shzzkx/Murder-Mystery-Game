@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Final Accusation
+{% endblock %}
+
+
+{% block main %}
+
+    <h2>Choose your location:</h2>
+    <form method="post" action="/accuse-location" class="opt_3">
+            <button type="submit" name="location" value="correct">The {{ loc_1 | lower }}.</button>
+            <button type="submit" name="location" value="incorrect">The {{ loc_2 | lower }}.</button>
+            <button type="submit" name="location" value="incorrect">The {{ loc_3 | lower }}.</button>
+        </div>
+    </form>
+
+{% endblock %}
