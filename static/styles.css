@@ -1,0 +1,270 @@
+
+/*DEFAULT VALUES*/
+:root {
+    --black: #19171b;
+    --bright-red: #75020f;
+    --dark-red: #51080d;
+    --maroon: #2b0307;
+    --white: #F0E7D8;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: HK Grotesk;
+    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+        format("opentype");
+}
+
+/*SCROLLBAR*/
+html {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  scroll-padding-top: 10%;
+}
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+
+
+/*GENERAL*/
+body {
+    font-family: Playfair Display;
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+main {
+    /*border: 2px solid black; /*TEMP*/
+    margin-top: 27vh;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+
+/*ARROW STUFF*/
+form, .arrow {
+    width: 100%;
+    margin-top: 65px;
+}
+
+.arrow a {
+    text-decoration: none;
+    color: var(--white);
+    transition: font-size 0.75s;
+}
+
+.arrow a:hover {
+    font-size: 45px;
+}
+
+.arrow {
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: right;
+    /*border: 2px solid blue; /*TEMP*/
+}
+
+.arrow.homepage {
+    text-align: center;
+}
+
+
+/*BUTTON STUFF*/
+button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    transition: font-size 1s;
+}
+
+button:hover {
+    font-size: 28px;
+}
+
+form {
+    /*border: 2px solid black; /*TEMP*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.opt_3 {
+    gap: 20%;
+}
+
+.loc .left {
+    width: 50%;
+    text-align: left;
+    /*border: 2px solid black;*/
+}
+
+.loc .right {
+    width: 50%;
+    text-align: right;
+    /*border: 2px solid blue;*/
+}
+
+
+/*SWL PAGE*/
+.swl {
+    /*border: 2px solid black; /*TEMP*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -150px;
+    gap: 5%;
+}
+
+.swl h3 {
+    /*border: 2px solid pink; /*TEMP*/
+    width: 100%;
+    height: 5vh;
+    background-color: var(--maroon);
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 4.8vh;
+}
+
+.locations {
+    margin-top: 0;
+    margin-bottom: -5%;
+}
+
+.locations .img-container {
+    /*border: 2px solid yellow; /*TEMP*/
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5%;
+}
+
+.locations_container {
+    /*border: 2px solid green; /*TEMP*/
+    width: 45%;
+    text-align: left;
+}
+
+.suspects_weapons {
+    /*border: 2px solid blue; /*TEMP*/
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.suspects, .weapons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 5%;
+    margin-top: -30px;
+}
+
+.suspects_weapons .img-container {
+    width: 30%;
+    height: 21.1vh;
+}
+
+/*images for swl*/
+.swl .img-container {
+    /*add placeholder image here jic*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.swl .img-container.library {
+    background-image: url("https://images.unsplash.com/photo-1751785861195-9c5a7e1f8679?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+}
+
+.swl .img-container.cellar {
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/05/00/47/winery-3061895_1280.jpg")
+}
+.swl .img-container.game-room {
+    background-image: url("https://images.unsplash.com/photo-1599685315659-bc876da49fe5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+}
+.swl .img-container.maid {
+    background-image: url("https://cdn.pixabay.com/photo/2012/12/25/21/56/shoeshine-72477_1280.jpg")
+}
+.swl .img-container.butler {
+    background-image: url("https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+}
+.swl .img-container.cook {
+    background-image: url("https://cdn.pixabay.com/photo/2022/09/22/04/46/kitchen-7471627_1280.jpg")
+}
+.swl .img-container.pillow {
+    background-image: url("https://images.unsplash.com/photo-1729829275469-875ce5bafca3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+}
+.swl .img-container.gun {
+    background-image: url("https://images.unsplash.com/photo-1742182306444-137abfdb5322?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+}
+.swl .img-container.wrench {
+    background-image: url("https://images.unsplash.com/photo-1652004155997-d93a30f13d8d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+}
+
+/*make all flexboxes (.swl, .suspects, .weapons) into columns if screen gets too narrow*/
+@media (width < 1000px) {
+    main {
+        margin-top: 10vh;
+    }
+    .swl, .suspects, .weapons, .locations {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .suspects_weapons, .locations_container {
+        width: 100%;
+        margin: 0;
+    }
+    .swl {
+        padding: 20px;
+        margin-bottom: -50px;
+    }
+    .locations, .suspects, .weapons {
+        align-items: center;
+    }
+
+    .locations {
+        margin-bottom: 40px;
+    }
+
+    .suspects, .weapons {
+        margin-top: -30px;
+    }
+
+    .suspects_weapons .img-container {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+
+/*STATIC TEXT*/
+h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+h3:not(.arrow) {
+    font-size: 25px;
+}
+
+.center {
+    text-align: center;
+}
