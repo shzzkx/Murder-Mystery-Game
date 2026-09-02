@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Final Accusation
+{% endblock %}
+
+
+{% block main %}
+
+    <h2>Choose your suspect:</h2>
+    <form method="post" action="/accuse-suspect" class="opt_3">
+            <button type="submit" name="suspect" value="correct">The maid.</button>
+            <button type="submit" name="suspect" value="incorrect">The butler.</button>
+            <button type="submit" name="suspect" value="incorrect">The cook.</button>
+        </div>
+    </form>
+
+{% endblock %}
