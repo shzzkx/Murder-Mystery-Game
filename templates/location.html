@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ name }}
+{% endblock %}
+
+
+{% block main %}
+
+    <h2>{{ desc }}</h2>
+    <form method="post" action="/location" class="loc">
+            <button class="left" type="submit" name="option" value="1" href="/response">{{ opt_1 }}</button>
+            <button class="right" type="submit" name="option" value="2" href="/response">{{ opt_2 }}</button>
+            <button class="left" type="submit" name="option" value="3" href="/location-change">Go to another room.</button>
+            <button class="right" type="submit" name="option" value="4" href="/accuse-suspect">Make your final accusation.</button>
+        </div>
+    </form>
+
+{% endblock %}
