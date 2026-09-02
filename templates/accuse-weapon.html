@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Final Accusation
+{% endblock %}
+
+
+{% block main %}
+
+    <h2>Choose your weapon:</h2>
+    <form method="post" action="/accuse-weapon" class="opt_3">
+            <button type="submit" name="weapon" value="correct">The pillow.</button>
+            <button type="submit" name="weapon" value="incorrect">The gun.</button>
+            <button type="submit" name="weapon" value="incorrect">The wrench.</button>
+        </div>
+    </form>
+
+{% endblock %}
