@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Entered
+{% endblock %}
+
+
+{% block main %}
+
+    <h2>Which location would you like to move to?</h2>
+    <form method="post" action="/location-change" class="opt_3">
+        <button type="submit" name="location" value="1" href="/location">The {{ loc_1 | lower }}.</button>
+        <button type="submit" name="location" value="2" href="/location">The {{ loc_2 | lower }}.</button>
+        <button type="submit" name="location" value="3" href="/location">The {{ loc_3 | lower }}.</button>
+    </form>
+
+{% endblock %}
