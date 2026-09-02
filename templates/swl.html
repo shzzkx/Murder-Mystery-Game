@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Suspects, Weapons, Locations
+{% endblock %}
+
+
+{% block main %}
+
+    <div class="swl">
+        <div class="locations_container">
+            <h2>Locations</h2>
+            <div class="locations">
+                <div class="img-container library"><h3>Library</h3></div>
+                <div class="img-container cellar"><h3>Cellar</h3></div>
+                <div class="img-container game-room"><h3>Game Room</h3></div>
+            </div>
+        </div>
+        <div class="suspects_weapons">
+            <h2>Suspects</h2>
+            <div class="suspects">
+                <div class="img-container maid"><h3>Maid</h3></div>
+                <div class="img-container butler"><h3>Butler</h3></div>
+                <div class="img-container cook"><h3>Cook</h3></div>
+            </div>
+            <h2>Weapons</h2>
+            <div class="weapons">
+                <div class="img-container pillow"><h3>Pillow</h3></div>
+                <div class="img-container gun"><h3>Gun</h3></div>
+                <div class="img-container wrench"><h3>Wrench</h3></div>
+            </div>
+        </div>
+    </div>
+    <h3 class="arrow"><a href="/entered">&rarr;</a></h3>
+
+{% endblock %}
